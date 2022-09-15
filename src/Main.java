@@ -31,7 +31,7 @@ public class Main {
         }
         int deposit = 15000;
         for (int b = 1; b <= 108; b++) {
-            double depositRate = (double) deposit * 0.07;
+            double depositRate = (double) ((deposit *0.07)/ 12);
             deposit = (int) (depositRate + deposit);
             if (b % 6 == 0) {
                 System.out.println("Месяц " + b + "," + "сумма накоплений " + deposit);
